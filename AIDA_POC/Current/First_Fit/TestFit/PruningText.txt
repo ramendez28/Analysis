@@ -1,0 +1,6 @@
+-------///////                 ///////-------
+-------/////// IN PRUNING PLOT ///////-------
+-------///////                 ///////-------
+In Region : SR_1
+ -> In Sample : Signal
+ --->>  WtXsec      is kept

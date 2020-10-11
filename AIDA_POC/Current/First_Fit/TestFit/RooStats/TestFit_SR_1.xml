@@ -1,0 +1,22 @@
+<!--
+This xml file created automatically on: 
+2020-3-19
+-->
+<!DOCTYPE Channel  SYSTEM 'HistFactorySchema.dtd'>  
+
+  <Channel Name="SR_1" InputFile="" >
+
+    <Data HistoName="SR_1_Data_regBin" InputFile="TestFit/Histograms/TestFit_histos.root" HistoPath=""  /> 
+
+    <StatErrorConfig RelErrorThreshold="0" ConstraintType="Poisson" /> 
+
+    <Sample Name="Signal"  HistoPath=""  HistoName="SR_1_Signal_regBin"  InputFile="TestFit/Histograms/TestFit_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="WtXsec"  High="1.02513"  Low="0.987437"   /> 
+      <NormFactor Name="SigXsecOverSM"  Val="1"  High="100"  Low="0"  Const="False"   /> 
+      <HistoSys Name="WtXsec"  HistoFileLow="TestFit/Histograms/TestFit_histos.root"  HistoNameLow="SR_1_Signal_WtXsec_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="TestFit/Histograms/TestFit_histos.root"  HistoNameHigh="SR_1_Signal_WtXsec_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+
+  </Channel>  

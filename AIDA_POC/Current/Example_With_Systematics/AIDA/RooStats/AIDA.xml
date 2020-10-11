@@ -1,0 +1,19 @@
+<!--
+This xml file created automatically on: 
+2020-4-13
+-->
+<!DOCTYPE Combination  SYSTEM 'HistFactorySchema.dtd'>
+
+<Combination OutputFilePrefix="AIDA/RooStats/AIDA" >
+
+
+  <Input>./AIDA/RooStats//AIDA_OFOC.xml</Input>
+  <Input>./AIDA/RooStats//AIDA_SFOC.xml</Input>
+  <Input>./AIDA/RooStats//AIDA_SFSC.xml</Input>
+
+  <Measurement Name="AIDA" Lumi="1" LumiRelErr="0.1" ExportOnly="True"  >
+    <POI>SigXsecOverSM</POI>  
+    <ParamSetting Const="True">Lumi</ParamSetting>
+  </Measurement> 
+
+</Combination>

@@ -1,0 +1,19 @@
+ |       | #it{tW} |
+ | #it{#mu}_{#it{tW}} | 0.0656764 / -0.0656764 |
+ | tW_MuR | 0.00189138 / -0.00189129 |
+ | tW_MuF | -0.000606369 / 0.000606431 |
+ | ISR Systematic | -0.00453022 / 0.00433855 |
+ | Jet Vertex Tracking | 0.000953244 / -0.00147272 |
+ | Electron Scale Factor ID | 0.0128287 / -0.0128245 |
+ | Electron Scale Factor Isolation | 1.68885e-08 / 1.68885e-08 |
+ | Electron Scale Factor Reconstruction | 0.00141684 / -0.0014167 |
+ | Electron Scale Factor Trigger | 0.0709816 / -0.0715306 |
+ | Muon Scale Factor Statistical | 0.000728838 / -0.000731771 |
+ | Muon Scale Low PT | 1.68885e-08 / 1.68885e-08 |
+ | Muon Scale Factor Systematic | 0.00222803 / -0.00201657 |
+ | Muon Scale Factor Systematic Low PT | 0.00222803 / -0.00201657 |
+ | Muon Scale Factor Isolation Statistic | 0.000169512 / -0.000168789 |
+ | Muon Scale Factor Isolation Systematic | 0.00214843 / -0.00214724 |
+ | Muon Scale Factor Trigger Statistics | -0.0705968 / 0.0697855 |
+ | Muon Scale Factor Trigger Systematic | 0.0655528 / -0.0715098 |
+ | Pile Up | -0.00378846 / 0.00379147 |

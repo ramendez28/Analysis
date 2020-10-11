@@ -1,0 +1,17 @@
+<!--
+This xml file created automatically on: 
+2020-3-19
+-->
+<!DOCTYPE Combination  SYSTEM 'HistFactorySchema.dtd'>
+
+<Combination OutputFilePrefix="TestFit/RooStats/TestFit" >
+
+
+  <Input>./TestFit/RooStats//TestFit_SR_1.xml</Input>
+
+  <Measurement Name="TestFit" Lumi="1" LumiRelErr="0.1" ExportOnly="True"  >
+    <POI>SigXsecOverSM</POI>  
+    <ParamSetting Const="True">Lumi</ParamSetting>
+  </Measurement> 
+
+</Combination>

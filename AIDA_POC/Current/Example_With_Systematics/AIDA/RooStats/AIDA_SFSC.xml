@@ -1,0 +1,54 @@
+<!--
+This xml file created automatically on: 
+2020-4-13
+-->
+<!DOCTYPE Channel  SYSTEM 'HistFactorySchema.dtd'>  
+
+  <Channel Name="SFSC" InputFile="" >
+
+    <Data HistoName="SFSC_Data_regBin" InputFile="AIDA/Histograms/AIDA_histos.root" HistoPath=""  /> 
+
+    <StatErrorConfig RelErrorThreshold="0" ConstraintType="Poisson" /> 
+
+    <Sample Name="tW"  HistoPath=""  HistoName="SFSC_tW_regBin"  InputFile="AIDA/Histograms/AIDA_histos.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="muR"  High="0.998831"  Low="1.00117"   /> 
+      <OverallSys Name="muF"  High="0.993005"  Low="1.00699"   /> 
+      <OverallSys Name="ISR"  High="0.987232"  Low="1.00503"   /> 
+      <OverallSys Name="JVT"  High="1.00232"  Low="0.997521"   /> 
+      <OverallSys Name="EL_SF_ID"  High="1.02719"  Low="0.973137"   /> 
+      <OverallSys Name="EL_SF_Isol"  High="1"  Low="1"   /> 
+      <OverallSys Name="EL_SF_Reco"  High="1.00331"  Low="0.996699"   /> 
+      <OverallSys Name="EL_SF_Trigger"  High="1.18134"  Low="1.17969"   /> 
+      <OverallSys Name="MU_SF_ID_Stat"  High="1"  Low="1"   /> 
+      <OverallSys Name="MU_SF_Stat_LowPT"  High="1"  Low="1"   /> 
+      <OverallSys Name="MU_SF_ID_Syst"  High="1"  Low="1"   /> 
+      <OverallSys Name="MU_SF_ID_Syst_LowPT"  High="1"  Low="1"   /> 
+      <OverallSys Name="MU_SF_ISOL_Stat"  High="1"  Low="1"   /> 
+      <OverallSys Name="MU_SF_ISOL_SYST"  High="1"  Low="1"   /> 
+      <OverallSys Name="MU_SF_TRIGGER_STAT"  High="1.18052"  Low="1.18052"   /> 
+      <OverallSys Name="MU_SF_TRIGGER_SYST"  High="1.18052"  Low="1.18052"   /> 
+      <OverallSys Name="PileUp"  High="0.995729"  Low="1.00755"   /> 
+      <NormFactor Name="SigXsecOverSM"  Val="1"  High="10"  Low="0"  Const="False"   /> 
+      <HistoSys Name="muR"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_muR_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_muR_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="muF"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_muF_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_muF_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="ISR"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_ISR_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_ISR_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="JVT"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_JVT_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_JVT_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_ID"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_EL_SF_ID_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_EL_SF_ID_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Isol"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_EL_SF_Isol_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_EL_SF_Isol_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Reco"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_EL_SF_Reco_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_EL_SF_Reco_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="EL_SF_Trigger"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_EL_SF_Trigger_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_EL_SF_Trigger_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_ID_Stat"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_MU_SF_ID_Stat_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_MU_SF_ID_Stat_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_Stat_LowPT"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_MU_SF_Stat_LowPT_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_MU_SF_Stat_LowPT_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_ID_Syst"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_MU_SF_ID_Syst_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_MU_SF_ID_Syst_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_ID_Syst_LowPT"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_MU_SF_ID_Syst_LowPT_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_MU_SF_ID_Syst_LowPT_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_ISOL_Stat"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_MU_SF_ISOL_Stat_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_MU_SF_ISOL_Stat_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_ISOL_SYST"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_MU_SF_ISOL_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_MU_SF_ISOL_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_TRIGGER_STAT"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_MU_SF_TRIGGER_STAT_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_MU_SF_TRIGGER_STAT_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="MU_SF_TRIGGER_SYST"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_MU_SF_TRIGGER_SYST_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_MU_SF_TRIGGER_SYST_Shape_Up_regBin"  HistoPathHigh=""   /> 
+      <HistoSys Name="PileUp"  HistoFileLow="AIDA/Histograms/AIDA_histos.root"  HistoNameLow="SFSC_tW_PileUp_Shape_Down_regBin"  HistoPathLow=""  HistoFileHigh="AIDA/Histograms/AIDA_histos.root"  HistoNameHigh="SFSC_tW_PileUp_Shape_Up_regBin"  HistoPathHigh=""   /> 
+    </Sample>
+
+
+
+  </Channel>  
