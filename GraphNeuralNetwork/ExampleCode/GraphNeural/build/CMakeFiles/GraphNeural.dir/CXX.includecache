@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tnom6927/Dokumente/Project/Analysis/GraphNeuralNetwork/ExampleCode/GraphNeural/source/GraphNeural/GraphNetwork.h
+
+/home/tnom6927/Dokumente/Project/Analysis/GraphNeuralNetwork/ExampleCode/GraphNeural/source/Root/GraphNetwork.cxx
+GraphNetwork.h
+-
+iostream
+-
+tensorflow/c/c_api.h
+-
+
