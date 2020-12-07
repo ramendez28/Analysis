@@ -1,7 +1,7 @@
 #include<iostream>
 #include<IO.h>
 #include<Particle_Functions.h>
-#include<GraphNetwork.h>
+#include<UnitTests.h>
 
 int main()
 {
@@ -14,11 +14,8 @@ int main()
   //  VerifyProcess(Data, i);   
   //} 
 
-  test(); 
-
-
-
-
+  TensorTests::TestTensorConversion();   
+  //TestGeometricData::TestCreateObject(); 
 
 
   return 0; 
