@@ -1,3 +1,0 @@
-/home/tnom6927/Dokumente/Project/Analysis/GraphNeuralNetwork/ExampleCode/GraphNeural/build/CMakeFiles/rebuild_cache.dir
-/home/tnom6927/Dokumente/Project/Analysis/GraphNeuralNetwork/ExampleCode/GraphNeural/build/CMakeFiles/edit_cache.dir
-/home/tnom6927/Dokumente/Project/Analysis/GraphNeuralNetwork/ExampleCode/GraphNeural/build/CMakeFiles/GraphNeural.dir
