@@ -104,8 +104,6 @@ def VerifyProcess(Data, index):
         Attributes = i[1]
         message += PDG_To_String(Attributes["PID"]) 
         message += " "
-
-   # print(message)
     return message
 
 def CreateFeatureDictionary(Dictionary):
@@ -170,7 +168,7 @@ def CreateFeatureDictionary(Dictionary):
             
             # Calculate the 4 vector between the init particle and the decay products
             lor = ROOT.TLorentzVector()
-            lor.SetPxPyPzE(init["Px"] + final["Px"], init["Py"] + final["Py"], init["Pz"] + final["Pz"], init["E"] + final["E"])
+            lor.SetPxPyPzE(init["Px"] - final["Px"], init["Py"] - final["Py"], init["Pz"] - final["Pz"], init["E"] - final["E"])
 
             particle = PDG_To_String(final["PID"])
             if particle == "e+":
