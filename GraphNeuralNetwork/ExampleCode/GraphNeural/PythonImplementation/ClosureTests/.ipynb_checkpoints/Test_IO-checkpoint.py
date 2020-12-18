@@ -20,12 +20,17 @@ def Test_ReadRootFile(Directory):
 
 def Test_EventMapGenerator(Directory):
     print("Running Test_EventMapGenerator")
-    Map = IO.ReadRootFile(Directory, 1)
-    for i in range(1):
+    leng = 5
+    Map = IO.ReadRootFile(Directory, leng)
+    for i in range(leng):
         Event = Particle.VerifyProcess(Map, i)
         print(Event)
     
-    Particle.EventMapGenerator(Map, 1)
+    Output = Particle.EventMapGenerator(Map, leng).EventMap
+    for i in Output:
+        Event = Particle.VerifyProcessObject(Output, i)
+        print(Event)
+        
         
         
 
