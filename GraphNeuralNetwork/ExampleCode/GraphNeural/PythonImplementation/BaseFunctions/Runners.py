@@ -1,24 +1,19 @@
-import BaseFunctions.Calculators as Cal
+import torch
+import BaseFunctions.Models as M
+import BaseFunctions.Trainers as T
 
-def Run_EdgeConv(loader):
-
-    model = EdgeConv(1, 2)
+def Run_EdgeConv(loader, in_channels, out_channels, CUDA = False): 
+    if CUDA == True:
+        device = torch.device("cuda")
+        model = M.EdgeConv(in_channels, out_channels).to(device)
+    else: 
+        model = M.EdgeConv(in_channels, out_channels)
     model.train()
-    
     optimizer = torch.optim.Adam(model.parameters(), lr = 0.01, weight_decay = 1e-5)
-    
-    for epoch in range(100):
+     
+    for epoch in range(50):
         for data in loader:
-            data.train_mask = torch.tensor([1, 1, 1], dtype = torch.bool)
-            loss = Train_EdgeConv(model, optimizer, data)
+            data.to(device)
+            loss = T.Train_EdgeConv(model, optimizer, data)
 
-    nodes = model(data.x, data.edge_index)
-    print(nodes)
-    print(data.x)
-    
-    for i in nodes:
-        print("=======") 
-        print(i)
-        for j in nodes:
-           prob = Cal.CalculateLinkProbability(i, j)
-           print(prob)
+    return model(data.x, data.edge_index)

@@ -17,6 +17,7 @@ def GenerateConnectivity(nodes):
 def DefineEdgeFeatures(Particle, Connectivity, Features):
     Edge_Feature = []
     for c in Connectivity:
+        Edge = []
         S = c[0]
         D = c[1]
         p_s = Particle[S]
@@ -24,29 +25,45 @@ def DefineEdgeFeatures(Particle, Connectivity, Features):
         
         # Define the feature 
         if "dE" in Features:
-            E_delta = abs(p_d.Energy - p_s.Energy)
+            dE = abs(p_d.Energy - p_s.Energy)
+            Edge.append(dE)
         if "dPx" in Features:
-            E_delta = abs(p_d.Px - p_s.Px)
+            dPx = abs(p_d.Px - p_s.Px)
+            Edge.append(dPx)
         if "dPy" in Features:
-            E_delta = abs(p_d.Py - p_s.Py)
+            dPy = abs(p_d.Py - p_s.Py)
+            Edge.append(dPy)
         if "dPz" in Features:
-            E_delta = abs(p_d.Pz - p_s.Pz)
+            dPz = abs(p_d.Pz - p_s.Pz)
+            Edge.append(dPz)
         if "dM" in Features:
-            E_delta = abs(p_d.Mass - p_s.Mass)
-        if "C" in Features:
-            E_delta = abs(p_d.Charge - p_s.Charge)
-        
-
-
-        Edge_Feature.append([E_delta])
-    return None
+            dM = abs(p_d.Mass - p_s.Mass)
+            Edge.append(dM)
+        Edge_Feature.append(Edge) 
+    return Edge_Feature
 
 def DefineNodeFeatures(Particle, Features):
-    Node = []
-    Node.append(Particle.Energy)
-    return Node
+    Nodes = []
+    for p in Particle:
+        Node = []
+    
+        # Define the feature 
+        if "E" in Features:
+            Node.append(p.Energy)
+        if "x" in Features:
+            Node.append(p.Px)
+        if "y" in Features:
+            Node.append(p.Py)
+        if "z" in Features:
+            Node.append(p.Pz)
+        if "M" in Features:
+            Node.append(p.Mass)
+        if "C" in Features:
+            Node.append(p.Charge)
+        Nodes.append(Node)
+    return Nodes
 
-def GraphDataObject(Pair_List, Node_Feature = None, Edge_Feature = None, y = None):
+def GraphDataObject(Pair_List, Node_Feature = None, Edge_Feature = None, y = None, mask = None):
     
     connectivity = ConnectivitySourceDestination(Pair_List)
     
@@ -58,8 +75,12 @@ def GraphDataObject(Pair_List, Node_Feature = None, Edge_Feature = None, y = Non
     
     if y != None:
         y = torch.tensor(y, dtype = torch.long)
-    
-    return Data(x = Node_Feature, edge_index = connectivity, edge_attr = Edge_Feature, y = y)
 
+    if mask != None:
+        mask = torch.tensor(mask, dtype = torch.bool)
+    
+    D = Data(x = Node_Feature, edge_index = connectivity, edge_attr = Edge_Feature, y = y)
+    D.mask = mask
+    return D
 
 
