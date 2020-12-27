@@ -15,7 +15,7 @@ def ProcessDataSample(EventMap):
         for x in EventMap[i]["Initial"]:
             TruthLabels[i].append(p)
             TruthParticles[i].append(x)
-            LabelsPID[i][p].append(x.PID)  
+            LabelsPID[i][p].append(x.PID) 
 
         p += 1
         for x in EventMap[i]["Products"]:
@@ -38,7 +38,7 @@ def ProcessDataSample(EventMap):
                     TruthLabels[i].append(p)
                     TruthParticles[i].append(t)
                     LabelsPID[i][p].append(t.PID)  
-
+                
     return TruthLabels, TruthParticles, LabelsPID
 
 def RootMapObjects(Dir, Events = -1):

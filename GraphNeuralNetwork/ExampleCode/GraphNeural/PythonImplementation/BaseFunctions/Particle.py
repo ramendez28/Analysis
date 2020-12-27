@@ -183,5 +183,4 @@ class EventMapGenerator:
                         Pair.append(Particle(x[1]))
                 P_P.Decay = Pair
                 Output["Products"].append(P_P)        
-        
         return Output

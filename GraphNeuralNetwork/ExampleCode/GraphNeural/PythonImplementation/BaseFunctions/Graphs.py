@@ -11,6 +11,8 @@ def GenerateConnectivity(nodes):
     pairs = []
     for i in range(len(nodes)):
         for x in range(len(nodes)):
+            #if i == x:
+            #    continue 
             pairs.append([i, x])
     return pairs
 
@@ -50,11 +52,11 @@ def DefineNodeFeatures(Particle, Features):
         # Define the feature 
         if "E" in Features:
             Node.append(p.Energy)
-        if "x" in Features:
+        if "Px" in Features:
             Node.append(p.Px)
-        if "y" in Features:
+        if "Py" in Features:
             Node.append(p.Py)
-        if "z" in Features:
+        if "Pz" in Features:
             Node.append(p.Pz)
         if "M" in Features:
             Node.append(p.Mass)

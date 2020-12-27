@@ -9,6 +9,6 @@ def Train_EdgeConv(model, optimizer, data):
     l = loss(x[data.mask], data.y[data.mask])
     l.backward()
     optimizer.step()
-    return loss
+    return l
 
 

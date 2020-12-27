@@ -10,4 +10,5 @@ import ClosureTests.Test_Models as M
 #PyG.Test_ConnectivitySourceDestination()
 #PyG.Test_GraphDataObject()
 
-M.Test_EdgeConv()
+#M.Test_EdgeConv()
+M.Test_MassDifferentiation()
